@@ -8,9 +8,22 @@ body{
     background-color: chartreuse;
 }  
 header{
-        width: 50%;
+        /* width: 50%; */
         background-color: palevioletred;
         padding: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: :space-between;
+}
+ul{
+    display: flex;
+}
+li{
+    list-style: none;
+}
+.header{
+    padding:100px;
+    width: 100%
 }
 .btn{
     padding: 15px;

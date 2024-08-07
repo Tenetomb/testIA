@@ -12,17 +12,16 @@ header{
         background-color: palevioletred;
         padding: 50px;
         margin: auto;
-        display: flex;
-        justify-content: :space-between;
 }
 ul{
     display: flex;
 }
 li{
+    padding: 1rem;
     list-style: none;
 }
 .header{
-    padding:100px;
+    display: flex;
     width: 100%
 }
 .btn{

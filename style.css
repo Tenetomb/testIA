@@ -12,6 +12,8 @@ header{
         background-color: palevioletred;
         padding: 50px;
         margin: auto;
+        display: flex;
+        justify-content: space-between;
 }
 ul{
     display: flex;

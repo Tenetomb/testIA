@@ -1,0 +1,15 @@
+Programme de "clean" de numéros nationaux,  redonner l'âge  et l'anniversaire de la personne basée dessus
+
+Le programme doit prendre une liste de numéros nationaux et s'assurer de leur bon encodage
+=> s'assurer qu'il n'y a pas de caractères spéciaux
+=> s'assurer du bon nombre de chiffres (11)
+=> s'assurer qu'il n'y a que des chiffres
+=> s'assurer que les 6 premiers chiffres sont cohérents avec une date de naissance possible (AAMMJJ) et retourner cette date de naissance
+=> s'assurer que le nombre de contrôle (2 derniers chiffres sont bons).
+La formule pour calculer les deux derniers chiffres (aller sur internet) = 
+Les 2 dernières positions constituent le chiffre de contrôle. Ce chiffre de contrôle est une suite de 2 chiffres formant un nombre compris entre 01 et 97. Ce nombre est égal à 97 moins le reste de la division par 97 du nombre formé (modulo de 97)(le reste de la division est un chiffre non divisible par 97, et donc inférieur à 97 dans ce cas. Par exemple pour 98 cela serait 1, pour 99 cela serait 2, pour 100 cela serait 3 ou pour 195 cela serait 1) :
+
+soit par les 9 premiers chiffres du numéro national pour les personnes nées avant le 1er janvier 2000 ;
+ex : 850730 033 donne 97 - (850730033 mod 97) = 97 - 69 = 28 donc le numéro national est 85 07 30 033 28
+soit par le chiffre 2 suivi des 9 premiers chiffres du numéro national pour les personnes nées après le 31 décembre 1999.
+ex : 170730 033 donne 97 - (2170730033 mod 97) = 97 - 13 = 84 donc le numéro national est 17 07 30 033 84
